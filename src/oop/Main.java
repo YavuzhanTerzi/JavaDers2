@@ -7,31 +7,39 @@ public class Main {
 
         Product product1 = new Product();
         //set value
-        product1.name = "Delonghi Kahve Makinesi";
-        product1.unitPrice = 7500;
-        product1.discount = 7;
-        product1.unitsInStock = 3;
-        product1.imageUrl = "mahmut1.jpg";
+        product1.setName("Delonghi Kahve Makinesi");
+        product1.setUnitPrice(7500);
+        product1.setDiscount(7);
+        product1.setUnitsInStock(3);
+        product1.setImageUrl("mahmut3.jpg");
+
+
+        Product product2 = new Product();
+        product2.setName("Smeg Kahve Makinesi");
+        product2.setUnitPrice(6500);
+        product2.setDiscount(7);
+        product2.setUnitsInStock(4);
+        product2.setImageUrl("mahmut1.jpg");
+
+        Product product3 = new Product();
+        product3.setName("Kitchen Kahve Makinesi");
+        product3.setUnitPrice(5500);
+        product3.setDiscount(7);
+        product3.setUnitsInStock(2);
+        product3.setImageUrl("mahmut2.jpg");
+
 
         //get value
         //System.out.println(product1.name  );
 
-        Product product2 = new Product();
-        product2.name = "Smeg Kahve Makinesi";
-        product2.unitPrice = 6500;
-        product2.discount = 8;
-        product2.unitsInStock = 2;
-        product2.imageUrl = "mahmut2.jpg";
-
-        Product product3 = new Product();
-        product3.name = "Kitchen Kahve Makinesi";
-        product3.unitPrice = 4500;
-        product3.discount = 9;
-        product3.unitsInStock = 4;
-        product3.imageUrl = "mahmut3.jpg";
 
         Product[] products = {product1,product2,product3};
-        //notes
+
+
+        for (Product product : products) {
+            System.out.println(product.getName());
+        }
+
 
 
 
