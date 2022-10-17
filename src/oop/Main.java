@@ -31,6 +31,7 @@ public class Main {
         product3.imageUrl = "mahmut3.jpg";
 
         Product[] products = {product1,product2,product3};
+        //notes
 
 
 
