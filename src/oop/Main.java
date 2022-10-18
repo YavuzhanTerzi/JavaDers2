@@ -33,14 +33,27 @@ public class Main {
         //System.out.println(product1.name  );
 
 
-        Product[] products = {product1,product2,product3};
+        Product[] products = {product1, product2, product3};
 
 
         for (Product product : products) {
             System.out.println(product.getName());
         }
+        IndividualCustomer invidualCustomer = new IndividualCustomer();
+        invidualCustomer.setId(1);
+        invidualCustomer.setPhone("05554443322");
+        invidualCustomer.setCustomerNumber("12345");
+        invidualCustomer.setFirstName("Yavuzhan");
+        invidualCustomer.setLastName("Terzi");
 
+        CorporateCustomer corporateCustomer = new CorporateCustomer();
+        corporateCustomer.setId(2);
+        corporateCustomer.setCompanyName("Kodlama.io");
+        corporateCustomer.setPhone("05556667788");
+        corporateCustomer.setTaxNumber("1111111111");
+        corporateCustomer.setCustomerNumber("54321");
 
+        Customer[] customers = {invidualCustomer,corporateCustomer}
 
 
 
